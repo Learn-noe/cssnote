@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;border: none; }
+        div{
+            /* flex布局css */
+            /* 两种写法：flex|inline-flex */
+            display: flex;
+            display: inline-flex;
+            /* 强制换行 */
+ /* 换行方式：.container { flex-wrap: nowrap | wrap | wrap-reverse; } */
+ /* wrap：项目主轴总尺寸超出容器时换行，第一行在上方 */
+            flex-wrap: wrap;
+/* 默认值：nowrap 不换行，即当主轴尺寸固定时，当空间不足时，项目尺寸会随之调整而并不会挤到下一行。 */
+            /* flex-wrap: nowrap; */
+ /* wrap-reverse：换行，第一行在下方 */
+            /* flex-wrap:wrap-reverse; */
+          
+        }
+        img{
+            height: 200px;
+            width:auto;
+            margin: 2px;
+ /* 项目的放大比例 flex-grow:<number>; */
+            flex-grow: 1;
+            /* 裁切图片 */
+            object-fit: cover;
+        }
+        /* img:nth-last-child(1){
+            /* 不缩放 */
+            /* flex-grow: 0;
+        }
+        img:nth-last-child(2){
+            flex-grow: 0;
+         } */ 
+         /* img:nth-last-child(4)~img{
+ flex-grow: 0;
+         } */
+         div:after{
+             content: '';
+             flex-grow: 99999999999999;
+             background: red;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- img[src="img/$.jpg"]*26 -->
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+        <img src="img/6.jpg" alt="">
+        <img src="img/7.jpg" alt="">
+        <img src="img/8.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+        <img src="img/10.jpg" alt="">
+        <img src="img/11.jpg" alt="">
+        <img src="img12.jpg" alt="">
+        <img src="img/13.jpg" alt="">
+        <img src="img/14.jpg" alt="">
+        <img src="img/15.jpg" alt="">
+        <img src="img/16.jpg" alt="">
+        <img src="img/17.jpg" alt="">
+        <img src="img/18.jpg" alt="">
+        <img src="img/19.jpg" alt="">
+        <img src="img/20.jpg" alt="">
+        <img src="img/21.jpg" alt="">
+        <img src="img/22.jpg" alt="">
+        <img src="img/23.jpg" alt="">
+        <img src="img/24.jpg" alt="">
+    </div>
+</body>
+</html>
