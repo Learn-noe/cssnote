@@ -1,0 +1,38 @@
+<!doctype html>
+<meta charset="UTF-8">
+<title>弹性盒子</title>
+<style>
+	ul{
+		/*将ul变成盒子*/
+		display:-webkit-box;
+		background: #000;
+		width:240px;
+		height:100px;
+		margin:0;
+		padding:0px;
+		list-style: none;
+	}
+	ul li{
+		padding:20px;
+	}
+	li:nth-child(1){
+		/*设置li的显示顺序*/
+		-webkit-box-ordinal-group:2;
+		background: pink;
+	}
+	li:nth-child(2){
+		/*设置li的显示顺序*/
+		-webkit-box-ordinal-group:3;
+		background: pink;
+	}
+	li:nth-child(3){
+		/*设置li的显示顺序*/
+		-webkit-box-ordinal-group:1;
+		background: pink;
+	}
+</style>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>

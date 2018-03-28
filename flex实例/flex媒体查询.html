@@ -1,0 +1,46 @@
+<!doctype html>
+<meta charset="UTF-8">
+<title>响应式布局：媒体查询</title>
+<style>
+/*	body{
+		background: pink;
+		font-size:50px;
+		color:blue;
+	}
+	@media not print{
+		body{
+			font-style:italic;
+			font-size:20px;
+		}
+	}*/
+/*	.block{
+		height:100px;
+		background: pink;
+	}
+	@media screen and (max-width:900px){
+		.block{
+			background: red;
+		}
+	}*/
+	div{
+		width:25%;
+		float:left;
+	}
+	img{
+		width:100%;
+	}
+	@media screen and (max-width:900px){
+		div:nth-child(3){
+			clear:both;
+		}
+		div{
+			width:50%;
+		}
+	}
+</style>
+<!-- <div class="week">丧心病狂你贺哥</div> -->
+<!-- <div class="block"></div> -->
+<div><img src="1.gif"></div>
+<div><img src="1.gif"></div>
+<div><img src="1.gif"></div>
+<div><img src="1.gif"></div>
